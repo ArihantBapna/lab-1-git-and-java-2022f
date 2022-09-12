@@ -30,4 +30,10 @@ public class IntroLabTest {
      *       the test results.
      * As a reference, we've included testExampleStudent above.
      */
+    @Test(timeout = 10)
+    public void testAriStudent() {
+        String expected = "Namaste Namaslay! My name is Ari! I like cats more than dogs! Ctrl + C / Ctrl + V, all you need, for your degree";
+        String actual = IntroLab.bapnaari();
+        assertEquals(expected, actual);
+    }
 }
